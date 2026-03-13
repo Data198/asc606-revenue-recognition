@@ -2,7 +2,7 @@
 
 An interactive tool that applies the **ASC 606 five-step revenue recognition model** to SaaS contracts. Input contract parameters, identify performance obligations, allocate transaction prices, and generate proper revenue schedules with balanced journal entries.
 
-**🔗 [Live Demo](https://asc606-revenue-recognition.streamlit.app)**
+**🔗 [Live Demo](https://asc606-revenue-recognit-6yoxyehl4e5kdnwalnqmtb.streamlit.app)**
 
 ![Built with Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-ff4b4b?logo=streamlit)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776ab?logo=python)
