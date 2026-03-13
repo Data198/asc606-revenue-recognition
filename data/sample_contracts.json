@@ -1,0 +1,174 @@
+{
+  "contracts": [
+    {
+      "id": "SC-001",
+      "name": "Annual SaaS Subscription with Implementation",
+      "customer": "TechFlow Inc",
+      "contract_date": "2025-01-01",
+      "term_months": 36,
+      "total_consideration": 360000,
+      "payment_terms": "Annual upfront",
+      "obligations": [
+        {
+          "name": "Cloud Platform Subscription",
+          "type": "over_time",
+          "standalone_selling_price": 10000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-01-01",
+          "delivery_end": "2027-12-31"
+        },
+        {
+          "name": "Implementation Services",
+          "type": "point_in_time",
+          "standalone_selling_price": 25000,
+          "ssp_method": "adjusted_market",
+          "completion_date": "2025-03-15"
+        },
+        {
+          "name": "Premium Support",
+          "type": "over_time",
+          "standalone_selling_price": 3000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-01-01",
+          "delivery_end": "2027-12-31"
+        }
+      ],
+      "variable_consideration": {
+        "type": "usage_based",
+        "description": "API overage charges based on consumption tiers",
+        "estimation_method": "expected_value",
+        "scenarios": [
+          {"probability": 0.3, "amount": 5000},
+          {"probability": 0.5, "amount": 15000},
+          {"probability": 0.2, "amount": 25000}
+        ],
+        "constraint_applied": true
+      }
+    },
+    {
+      "id": "SC-002",
+      "name": "Multi-Year Enterprise License",
+      "customer": "DataSphere Ltd",
+      "contract_date": "2025-04-01",
+      "term_months": 24,
+      "total_consideration": 480000,
+      "payment_terms": "Quarterly installments",
+      "obligations": [
+        {
+          "name": "Enterprise Software License",
+          "type": "point_in_time",
+          "standalone_selling_price": 200000,
+          "ssp_method": "observable",
+          "completion_date": "2025-04-01"
+        },
+        {
+          "name": "Managed Hosting",
+          "type": "over_time",
+          "standalone_selling_price": 8000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-04-01",
+          "delivery_end": "2027-03-31"
+        },
+        {
+          "name": "Training Program",
+          "type": "point_in_time",
+          "standalone_selling_price": 15000,
+          "ssp_method": "adjusted_market",
+          "completion_date": "2025-06-30"
+        }
+      ],
+      "variable_consideration": null
+    },
+    {
+      "id": "SC-003",
+      "name": "Usage-Based Platform Contract",
+      "customer": "CloudNine Corp",
+      "contract_date": "2025-07-01",
+      "term_months": 12,
+      "total_consideration": 120000,
+      "payment_terms": "Monthly in arrears",
+      "obligations": [
+        {
+          "name": "Platform Access Fee",
+          "type": "over_time",
+          "standalone_selling_price": 5000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-07-01",
+          "delivery_end": "2026-06-30"
+        },
+        {
+          "name": "Data Processing Services",
+          "type": "over_time",
+          "standalone_selling_price": 3500,
+          "ssp_method": "residual",
+          "delivery_start": "2025-07-01",
+          "delivery_end": "2026-06-30"
+        }
+      ],
+      "variable_consideration": {
+        "type": "usage_based",
+        "description": "Volume-based processing fee tiers",
+        "estimation_method": "most_likely_amount",
+        "scenarios": [
+          {"probability": 0.2, "amount": 10000},
+          {"probability": 0.6, "amount": 30000},
+          {"probability": 0.2, "amount": 50000}
+        ],
+        "constraint_applied": true
+      }
+    },
+    {
+      "id": "SC-004",
+      "name": "SaaS Bundle with Financing Component",
+      "customer": "Quantum Analytics",
+      "contract_date": "2025-01-15",
+      "term_months": 36,
+      "total_consideration": 540000,
+      "payment_terms": "Monthly",
+      "obligations": [
+        {
+          "name": "Analytics Platform Subscription",
+          "type": "over_time",
+          "standalone_selling_price": 12000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-01-15",
+          "delivery_end": "2028-01-14"
+        },
+        {
+          "name": "Custom Integration",
+          "type": "point_in_time",
+          "standalone_selling_price": 45000,
+          "ssp_method": "adjusted_market",
+          "completion_date": "2025-04-15"
+        },
+        {
+          "name": "Dedicated Support",
+          "type": "over_time",
+          "standalone_selling_price": 4000,
+          "ssp_method": "observable",
+          "delivery_start": "2025-01-15",
+          "delivery_end": "2028-01-14"
+        },
+        {
+          "name": "Annual Training Credits",
+          "type": "over_time",
+          "standalone_selling_price": 6000,
+          "ssp_method": "adjusted_market",
+          "delivery_start": "2025-01-15",
+          "delivery_end": "2028-01-14"
+        }
+      ],
+      "variable_consideration": {
+        "type": "discount",
+        "description": "Volume discount based on user count exceeding tiers",
+        "estimation_method": "expected_value",
+        "scenarios": [
+          {"probability": 0.4, "amount": -15000},
+          {"probability": 0.35, "amount": -30000},
+          {"probability": 0.25, "amount": -50000}
+        ],
+        "constraint_applied": true
+      }
+    }
+  ]
+}
